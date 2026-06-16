@@ -7,7 +7,6 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ThreeScene from "./components/ThreeScene";
 import CharacterMessage from "./components/CharacterMessage";
 
 function App() {
@@ -16,19 +15,20 @@ function App() {
 
   return (
     <>
-      <ThreeScene animation={animation} />
       <CharacterMessage message={message} />
       <Navbar
-      setMessage={setMessage}
-       setAnimation={setAnimation}
+        setMessage={setMessage}
+        setAnimation={setAnimation}
       />
 
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      <main>
+        <Hero animation={animation} />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 }
