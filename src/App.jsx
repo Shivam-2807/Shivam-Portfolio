@@ -12,12 +12,16 @@ import CharacterMessage from "./components/CharacterMessage";
 
 function App() {
   const [message, setMessage] = useState("");
+  const [animation, setAnimation] = useState("greeting");
 
   return (
     <>
-      <ThreeScene />
+      <ThreeScene animation={animation} />
       <CharacterMessage message={message} />
-      <Navbar setMessage={setMessage} />
+      <Navbar
+      setMessage={setMessage}
+       setAnimation={setAnimation}
+      />
 
       <Hero />
       <About />

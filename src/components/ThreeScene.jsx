@@ -1,8 +1,9 @@
 import { Canvas } from "@react-three/fiber";
 import Character from "./Character";
 
-export default function ThreeScene() {
+export default function ThreeScene({ animation }) {  
   return (
+  
     <div
       style={{
         position: "fixed",
@@ -18,7 +19,7 @@ export default function ThreeScene() {
         <ambientLight intensity={2} />
         <directionalLight position={[5, 5, 5]} intensity={2} />
 
-        <Character />
+        <Character animation={animation} />
       </Canvas>
     </div>
   );
