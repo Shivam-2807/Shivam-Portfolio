@@ -38,7 +38,7 @@ Following the standard Vite build pipeline, the codebase is structured as follow
 ├── package.json     # Project dependencies and npm scripts
 ├── vite.config.js   # Vite compilation and bundling settings
 └── README.md        # Project documentation
-
+```
 ⚡ Getting Started
 To get a local copy of this project up and running for development, follow these steps:
 
