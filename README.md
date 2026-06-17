@@ -1,4 +1,4 @@
-# 💻 Shivam's Developer Portfolio
+## 💻 Shivam's Developer Portfolio
 
 Welcome to my personal portfolio repository! This is a fast, highly-optimized single-page application built using the modern Vite and React ecosystem. It serves as a central hub to showcase my software development journey, core technical skills, and professional projects.
 
@@ -39,7 +39,7 @@ Following the standard Vite build pipeline, the codebase is structured as follow
 ├── vite.config.js   # Vite compilation and bundling settings
 └── README.md        # Project documentation
 ```
-⚡ Getting Started
+##⚡ Getting Started
 To get a local copy of this project up and running for development, follow these steps:
 
 1. Clone the Repository
