@@ -124,7 +124,7 @@ function Navbar({ setMessage, setAnimation }) {
           box-shadow:
             0 18px 60px rgba(15, 23, 42, 0.28),
             inset 0 1px 0 rgba(255, 255, 255, 0.12);
-          overflow: hidden;
+        
         }
 
         .navbar::before {
@@ -254,8 +254,9 @@ function Navbar({ setMessage, setAnimation }) {
         }
 
         .mobile-menu {
-          position: absolute;
-          top: calc(100% + 10px);
+          position: fixed;
+          z-index: 3000;
+          top: 80px;
           left: 0;
           right: 0;
           display: grid;
