@@ -255,7 +255,12 @@ function Navbar({ setMessage, setAnimation }) {
 
         .mobile-menu {
           position: fixed;
-          z-index: 3000;
+          z-index: 99999 ;
+          background: red ;
+          opacity: 1 ;
+          visibility: visible ;
+          
+          
           top: 80px;
           left: 0;
           right: 0;
@@ -264,7 +269,7 @@ function Navbar({ setMessage, setAnimation }) {
           padding: 12px;
           border: 1px solid rgba(255, 255, 255, 0.14);
           border-radius: 8px;
-          background: rgba(15, 23, 42, 0.94);
+          
           box-shadow: 0 26px 80px rgba(15, 23, 42, 0.35);
         }
 
