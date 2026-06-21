@@ -67,7 +67,10 @@ function Navbar({ setMessage, setAnimation }) {
         type="button"
         aria-label="Toggle navigation menu"
         aria-expanded={isOpen}
-        onClick={() => setIsOpen((current) => !current)}
+        onClick={() => {
+        console.log("clicked");
+        setIsOpen((current) => !current);
+      }}
       >
         <span />
         <span />
