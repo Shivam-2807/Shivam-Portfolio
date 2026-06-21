@@ -67,7 +67,10 @@ function Navbar({ setMessage, setAnimation }) {
         type="button"
         aria-label="Toggle navigation menu"
         aria-expanded={isOpen}
-        onClick={() => setIsOpen((current) => !current)}
+        onClick={() => {
+        console.log("clicked");
+        setIsOpen((current) => !current);
+      }}
       >
         <span />
         <span />
@@ -124,7 +127,7 @@ function Navbar({ setMessage, setAnimation }) {
           box-shadow:
             0 18px 60px rgba(15, 23, 42, 0.28),
             inset 0 1px 0 rgba(255, 255, 255, 0.12);
-          overflow: hidden;
+        
         }
 
         .navbar::before {
@@ -220,7 +223,7 @@ function Navbar({ setMessage, setAnimation }) {
         .menu-toggle {
           position: relative;
           z-index: 1;
-          display: none;
+          display: grid;
           width: 42px;
           height: 42px;
           border: 1px solid rgba(255, 255, 255, 0.16);
@@ -254,8 +257,9 @@ function Navbar({ setMessage, setAnimation }) {
         }
 
         .mobile-menu {
-          position: absolute;
-          top: calc(100% + 10px);
+          position: fixed;
+          z-index: 3000;
+          top: 80px;
           left: 0;
           right: 0;
           display: grid;
@@ -295,7 +299,7 @@ function Navbar({ setMessage, setAnimation }) {
           }
 
           .menu-toggle {
-            display: block;
+            display: grid;
           }
         }
       `}</style>
