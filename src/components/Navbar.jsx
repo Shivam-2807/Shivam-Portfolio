@@ -223,7 +223,7 @@ function Navbar({ setMessage, setAnimation }) {
         .menu-toggle {
           position: relative;
           z-index: 1;
-          display: grid;
+          display: none; 
           width: 42px;
           height: 42px;
           border: 1px solid rgba(255, 255, 255, 0.16);
@@ -233,7 +233,15 @@ function Navbar({ setMessage, setAnimation }) {
           place-items: center;
           padding: 9px;
         }
+        @media (max-width: 760px) {
+        .desktop-menu {
+          display: none;
+        }
 
+        .menu-toggle {
+          display: grid;
+        }
+        }
         .menu-toggle span {
           display: block;
           width: 20px;
