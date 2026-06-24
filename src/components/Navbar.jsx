@@ -273,7 +273,7 @@ function Navbar({ setMessage, setAnimation }) {
           padding: 12px;
           border: 1px solid rgba(255, 255, 255, 0.14);
           border-radius: 8px;
-          background: rgba(15, 23, 42, 0.94);
+          background: linear-gradient(135deg,rgba(15, 23, 42, 1),rgba(8, 47, 73, 1));
           box-shadow: 0 26px 80px rgba(15, 23, 42, 0.35);
         }
 
