@@ -106,10 +106,10 @@ function Navbar({ setMessage, setAnimation }) {
       <style>{`
         .navbar {
           position: fixed;
-          top: 16px;
-          left: 16px;
-          right: 16px;
-          width: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
           box-sizing: border-box;
           display: grid;
           grid-template-columns: auto minmax(0, 1fr) auto;
@@ -118,7 +118,7 @@ function Navbar({ setMessage, setAnimation }) {
           padding: 12px 14px 12px 20px;
           border: 1px solid rgba(103, 232, 249, 0.22);
           border-radius: 8px;
-          background:
+          background: 
             linear-gradient(135deg, rgba(15, 23, 42, 0.84), rgba(8, 47, 73, 0.72)),
             rgba(15, 23, 42, 0.72);
           backdrop-filter: blur(18px);
@@ -176,10 +176,11 @@ function Navbar({ setMessage, setAnimation }) {
           position: relative;
           z-index: 1;
           display: flex;
+          justify-self:end;
           justify-content: center;
           gap: clamp(16px, 3vw, 34px);
           list-style: none;
-          margin: 0;
+          margin-left: auto;
           padding: 0;
         }
 
@@ -220,24 +221,29 @@ function Navbar({ setMessage, setAnimation }) {
           transform: scaleX(1);
         }
 
+        .desktop-menu {
+          display: flex;
+        }
+
         .menu-toggle {
           position: relative;
           z-index: 1;
-          display: grid;
+          display: none;
           width: 42px;
           height: 42px;
-          border: 1px solid rgba(255, 255, 255, 0.16);
+          border: 1px solid rgba(34, 197, 94, 0.5);
           border-radius: 8px;
-          background: rgba(103, 232, 249, 0.09);
+          background: rgba(34, 197, 94, 0.18);
           cursor: pointer;
           place-items: center;
           padding: 9px;
+          box-shadow: 0 0 12px rgba(34, 197, 94, 0.3);
         }
 
         .menu-toggle span {
           display: block;
-          width: 20px;
-          height: 2px;
+          width: 22px;
+          height: 3px;
           margin: 3px auto;
           border-radius: 99px;
           background: #ffffff;
@@ -300,6 +306,11 @@ function Navbar({ setMessage, setAnimation }) {
 
           .menu-toggle {
             display: grid;
+          }
+
+          .mobile-menu {
+            left: 12px;
+            right: 12px;
           }
         }
       `}</style>
