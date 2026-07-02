@@ -1,4 +1,4 @@
-## 💻 Shivam's Developer Portfolio
+## 💻 Shivam's Developer Portfolio 
 
 Welcome to my personal portfolio repository! This is a fast, highly-optimized single-page application built using the modern Vite and React ecosystem. It serves as a central hub to showcase my software development journey, core technical skills, and professional projects.
 
